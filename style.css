@@ -10,7 +10,7 @@ body {
 header h1 {
   font-size: 3em;
   margin: 0.5em 0;
-  color: #d2691e;
+  color: #8b4513;
 }
 
 header h2 {
@@ -54,10 +54,6 @@ header h3 {
   animation: spin 5s linear infinite;
 }
 
-#cookieButton:hover {
-  transform: scale(1.1);
-}
-
 .shop {
   background-color: #fff8dc;
   padding: 20px;
@@ -82,7 +78,7 @@ header h3 {
 }
 
 button {
-  background-color: #d2691e;
+  background-color: #8b4513;
   color: #ffffff;
   border: none;
   padding: 10px 20px;

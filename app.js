@@ -15,6 +15,10 @@ const cookieCountDisplay = document.getElementById("cookieCount");
 const cookiesPerSecondDisplay = document.getElementById("cookiesPerSecond");
 const cookieButton = document.getElementById("cookieButton");
 const shopDisplay = document.getElementById("shop");
+const audio = new Audio();
+audio.src = "Assets/mouseClick.mp3";
+const audio2 = new Audio();
+audio2.src = "Assets/upgradeSound.mp3";
 
 cookieButton.addEventListener("click", function () {
   cookieCount++;
