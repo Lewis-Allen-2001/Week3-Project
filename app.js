@@ -5,7 +5,7 @@ let enhancedOvenPrice = 500;
 let cookieFarmPrice = 1000;
 let robotBakerPrice = 2000;
 let cookieFactoryPrice = 5000;
-let magicFlowerPrice = 10000;
+let magicFlourPrice = 10000;
 let timeMachinePrice = 20000;
 let quantumOvenPrice = 50000;
 let alienTechnologyPrice = 100000;
@@ -122,9 +122,9 @@ document
     }
   });
 
-document.getElementById("Magic Flower").addEventListener("click", function () {
-  if (cookieCount >= magicFlowerPrice) {
-    cookieCount -= magicFlowerPrice;
+document.getElementById("Magic Flour").addEventListener("click", function () {
+  if (cookieCount >= magicFlourPrice) {
+    cookieCount -= magicFlourPrice;
 
     cookiesPerSecond += 100;
   } else {
