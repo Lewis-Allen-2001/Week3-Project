@@ -1,61 +1,57 @@
-body,
-h1,
-h2,
-p {
+body {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  background-color: #f0e68c;
+  text-align: center;
+  color: #3e2723;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-  text-align: center;
-  padding: 20px;
+header h1 {
+  font-size: 3em;
+  margin: 0.5em 0;
+  color: #d2691e;
 }
 
-header {
-  background-color: #ffcc00;
-  color: #fff;
-  padding: 20px 0;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+header h2 {
+  font-size: 1.5em;
+  margin: 0.2em 0;
+  color: #8b4513;
 }
 
-h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
-}
-
-h2 {
+header h3 {
   font-size: 1.2em;
-  font-weight: normal;
-  color: #333;
+  margin: 0.2em 0;
+  color: #8b4513;
 }
 
 #cookieInformation {
-  background-color: #fff;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-#cookieInformation p {
-  font-size: 1.2em;
-  margin: 10px 0;
+  background-color: #fff8dc;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .cookieButtonContainer {
-  margin: 20px 0;
+  margin: 20px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 #cookieButton {
   width: 200px;
+  height: 200px;
   cursor: pointer;
-  transition: transform 0.2s;
+  animation: spin 5s linear infinite;
 }
 
 #cookieButton:hover {
@@ -63,40 +59,38 @@ h2 {
 }
 
 .shop {
-  background-color: #fff;
+  background-color: #fff8dc;
   padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.shop p {
-  font-weight: bold;
-  font-size: 1.2em;
+  border-radius: 10px;
+  width: 80%;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .shop-item-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  background-color: #deb887;
+  margin: 10px 0;
   padding: 10px;
-  border-bottom: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .shop-item-container p {
   margin: 0;
+}
+
+button {
+  background-color: #d2691e;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
   font-size: 1em;
 }
 
-.shop-item-container button {
-  background-color: #ffcc00;
-  color: #fff;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.shop-item-container button:hover {
-  background-color: #e6b800;
+button:hover {
+  background-color: #0b0b0b;
 }
